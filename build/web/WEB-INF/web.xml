@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>Week02Servlet</servlet-name>
+        <servlet-class>Week02Servlet.Week02Servlet</servlet-class>
+        <!--Part 4-->
+        <init-param>
+            <param-name>NumStudents</param-name>
+            <param-value>8</param-value>
+        </init-param>
+    </servlet>
+    <!--Part 4-->
+    <context-param>
+        <param-name>Unit</param-name>
+        <param-value>Hit321 - Enterprise Applications</param-value>
+    </context-param>
+<!--    <servlet>
+        <servlet-name>Param_Demo</servlet-name>
+        <servlet-class>Param_Package.Param_Demo</servlet-class>
+    </servlet>-->
+    <servlet-mapping>
+        <servlet-name>Week02Servlet</servlet-name>
+        <url-pattern>/Week02Servlet</url-pattern>
+    </servlet-mapping>
+<!--    <servlet-mapping>
+        <servlet-name>Param_Demo</servlet-name>
+        <url-pattern>/Param_Demo</url-pattern>
+        <init-param>
+            <param-name>NumStudents</param-name>
+            <param-value>8</param-value>
+        </init-param>
+    </servlet-mapping>-->
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+
+</web-app>
